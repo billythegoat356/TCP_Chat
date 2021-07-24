@@ -14,9 +14,7 @@ def clear():
     system("cls" if name == 'nt' else "clear")
 
 
-
-host, port = '8.tcp.ngrok.io', 16378
-# host, port = 'localhost', 8500
+host, port = 'localhost', 8500
 
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
