@@ -40,8 +40,7 @@ class Client:
 
     def __init__(self, socket):
 
-        main_thread = Thread(target=self.tkinter)
-        main_thread.start()
+        
 
         window = tk.Tk()
         self.window = window
@@ -62,6 +61,11 @@ class Client:
 
 
         main_label.pack()
+
+        main_thread = Thread(target=self.tkinter)
+        main_thread.start()
+
+
         self.window.mainloop()
 
     def tkinter(self):
